@@ -43,7 +43,9 @@
     scroll-behavior: smooth;
   }
 }
-
+.brown{
+	background-color: #945B16;
+}
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -199,6 +201,7 @@ sup {
 sub {
   bottom: -.25em;
 }
+
 
 sup {
   top: -.5em;
@@ -11898,7 +11901,15 @@ button:hover, button:focus {
 .form-control {
   border-radius: 0px;
 }
+#btn-sub{
+	background:#945B16;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+	border: none;
+	color: #fff;
 
+}
 #headercara {
   height: 95vh;
   display: block !important;
@@ -11957,4 +11968,9 @@ button:hover, button:focus {
   left: 0;
   right: 0;
 }
+
+  #form-control {
+    border: 1px solid #ccc;
+  }
+
 /*# sourceMappingURL=customstyle.css.map */

@@ -9,8 +9,25 @@
     <?php wp_head() ?>
 </head>
 
-<nav class="navbar navbar-light bg-light fixed-top" id="navbar">
-    <a class="navbar-brand" href="/home"><?php dynamic_sidebar('header_logo'); ?></a>
-</nav>
+     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+     <div class="container">
+    
+       
+    
+    <a class="navbar-brand" href="#">Nwabisa Plaatjie</a>
+        <?php
+          wp_nav_menu( array(
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => 'div',
+            'container_class'   => 'collapse navbar-collapse',
+            'container_id'      => 'bs-example-navbar-collapse-1',
+            'menu_class'        => 'nav navbar-nav ms-auto',
+            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'            => new WP_Bootstrap_Navwalker(),
+        ) );
+        ?>
+    </div>
+</nav> 
 
 <body <?php body_class(); ?> id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
